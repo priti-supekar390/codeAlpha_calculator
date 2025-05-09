@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            background-color:mistyrose;
+    
+        }
+    
+        
+        .bdy{
+             background-color:mistyrose;
+            color:black;
+            text-align: center;
+            margin-left: 35%;
+            margin-right: 35%;
+            margin-top: 15%;
+            padding: 5px;
+            white-space: 10px;
+            border: 2px solid black; 
+           /* background-image: url("https://th.bing.com/th/id/OIP.L12Sj4-nzr-g2Tzx5s_h1gHaHa?rs=1&pid=ImgDetMain");*/
+        }
+            button:hover{
+
+            background-color:dimgrey;
+        }
+        input:hover{
+            background-color:dimgrey;
+
+        }
+        button{
+            size: 10%;
+            word-spacing: 5%;
+            border:2px solid black;
+            color:black;
+        }
+        input{
+            border:2px solid black;
+        }
+        .bdy:hover{
+            background-color:aqua;
+
+        }
+    </style>
+</head>
+
+<body>
+    <center><h1><u>Advanced Calculator</u></h1></center>
+    <div class="bdy">
+    <u><b><p style="color:black;">Enter First number:</p></b></u>
+    <input type="number" id="no1"><br><br>
+    <u><b><p style="color:black;">Enter Second number:</p></b></u>
+    <input type="number" id="no2"><br><br>
+    <button onclick="add()"><b>+</b></button>
+    <button onclick="sub()"><b>-</b></button>
+    <button onclick="mul()"><b>*</b></button>
+    <button onclick="div()"><b>/</b></button>
+    <script>
+        function add()
+        {
+             var a=parseInt(document.getElementById("no1").value);
+             var b=parseInt(document.getElementById("no2").value);
+             alert(a+b)
+        }
+        function sub()
+        {
+             var a=parseInt(document.getElementById("no1").value);
+             var b=parseInt(document.getElementById("no2").value);
+             alert(a-b)
+        }
+        function mul()
+        {
+             var a=parseInt(document.getElementById("no1").value);
+             var b=parseInt(document.getElementById("no2").value);
+             alert(a*b)
+        }
+        function div()
+        {
+             var a=parseInt(document.getElementById("no1").value);
+             var b=parseInt(document.getElementById("no2").value);
+             alert(a/b)
+        }
+
+        
+    </script>
+    </div>
+</body>
+
+</html>
